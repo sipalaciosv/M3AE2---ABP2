@@ -1,0 +1,163 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f5f5f5;
+  color: #222;
+}
+
+.header {
+  background: #212a3e;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.header__logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+
+
+.nav__list {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.nav__item a {
+  text-decoration: none;
+  color: #fff;
+  padding: 5px 12px;
+  border-radius: 6px;
+  transition: background 0.2s;
+}
+
+.nav__item--active a,
+.nav__item a:hover {
+  background: #394867;
+}
+.main-content {
+  max-width: 900px;
+  margin: 30px auto;
+  background: #fff;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(33, 42, 62, 0.05);
+}
+
+.article__title {
+  font-size: 2rem;
+  margin-bottom: 12px;
+}
+
+.article__paragraph {
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+.article__image {
+  display: block;
+  max-width: 100%;
+  margin: 18px auto;
+  border-radius: 8px;
+}
+
+.contact-form {
+  margin-top: 36px;
+}
+
+.contact-form__title {
+  font-size: 1.4rem;
+  margin-bottom: 14px;
+}
+
+.contact-form__form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contact-form__input {
+  padding: 10px;
+  border: 1px solid #bbb;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.contact-form__input--textarea {
+  min-height: 80px;
+  resize: vertical;
+}
+
+.contact-form__button {
+  background: #394867;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 0;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.contact-form__button:hover {
+  background: #212a3e;
+}
+
+.footer {
+  background: #212a3e;
+  color: #fff;
+  padding: 18px;
+  margin-top: 36px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  border-radius: 12px 12px 0 0;
+}
+
+.footer__contact-info {
+  font-size: 0.96rem;
+}
+
+.footer__social {
+  display: flex;
+  gap: 16px;
+}
+
+.footer__social-link {
+  color: #b5d0ec;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.2s;
+}
+
+.footer__social-link:hover {
+  color: #fff;
+}
+
+@media (max-width: 700px) {
+  .header, .main-content, .footer {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 12px;
+  }
+  .main-content {
+    padding: 12px;
+  }
+  .nav__list {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .footer {
+    align-items: flex-start;
+  }
+}

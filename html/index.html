@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página BEM Demo</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+  <!-- Bloque: header -->
+  <header class="header">
+    <div class="header__logo">
+        <img class="header__logo-icon" src="https://i.pinimg.com/736x/9b/27/81/9b2781c699929d16e74e438ae2615b61.jpg" alt="icono" style="width: 32px; vertical-align: middle; margin-right: 8px;">
+    </div>
+
+    <nav class="header__nav nav">
+      <ul class="nav__list">
+        <li class="nav__item nav__item--active"><a href="#">Inicio</a></li>
+        <li class="nav__item"><a href="#">Nosotros</a></li>
+        <li class="nav__item"><a href="#">Servicios</a></li>
+        <li class="nav__item"><a href="#">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Bloque: main-content -->
+  <main class="main-content">
+    <article class="main-content__article article">
+      <h1 class="article__title">Bienvenido a mi página con BEM</h1>
+      <p class="article__paragraph">Este es un ejemplo de estructura HTML y CSS usando la metodología BEM. Así se logra mantener el código organizado y escalable.</p>
+      <p class="article__paragraph">Puedes usar este modelo para futuros proyectos y facilitar el trabajo en equipo.</p>
+      <img class="article__image" src="https://cdn.pixabay.com/photo/2018/02/16/10/23/web-3157323_1280.jpg" alt="Ejemplo">
+    </article>
+
+    <!-- Bloque: contact-form -->
+    <section class="contact-form">
+      <h2 class="contact-form__title">Contáctanos</h2>
+      <form class="contact-form__form" action="#">
+        <input class="contact-form__input" type="text" placeholder="Nombre">
+        <input class="contact-form__input" type="email" placeholder="Email">
+        <textarea class="contact-form__input contact-form__input--textarea" placeholder="Mensaje"></textarea>
+        <button class="contact-form__button" type="submit">Enviar</button>
+      </form>
+    </section>
+
+
+    <section class="gallery">
+      <h2 class="gallery__title">Galería de Imágenes</h2>
+      <div class="gallery__grid">
+        <img class="gallery__image" src="https://i.pinimg.com/736x/21/9a/20/219a2078d4a873a8e4a83c4f2386102a.jpg" alt="img1">
+        <img class="gallery__image" src="https://i.pinimg.com/736x/4a/8e/c7/4a8ec77c421e45f69b4ef291d7d0214a.jpg" alt="img2">
+        <img class="gallery__image" src="https://i.pinimg.com/736x/f2/ba/b2/f2bab2abff94552144d5466cc251d081.jpg" alt="img3">
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Bloque: footer -->
+  <footer class="footer">
+    <div class="footer__contact-info">
+      <span>Email: contacto@ejemplo.com</span>
+      <span>Tel: 1234-5678</span>
+    </div>
+    <div class="footer__social">
+      <a class="footer__social-link" href="#">Facebook</a>
+      <a class="footer__social-link" href="#">Twitter</a>
+      <a class="footer__social-link" href="#">Instagram</a>
+    </div>
+  </footer>
+
+</body>
+</html>
